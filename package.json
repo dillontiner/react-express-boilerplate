@@ -4,6 +4,9 @@
   "description": "create-react-app with express server",
   "main": "index.js",
   "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/dillontiner/react-express-boilerplate/issues"
   },
-  "homepage": "https://github.com/dillontiner/react-express-boilerplate#readme"
+  "homepage": "https://github.com/dillontiner/react-express-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
 }
