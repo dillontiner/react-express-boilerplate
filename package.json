@@ -1,14 +1,23 @@
 {
-  "name": "three-js-sphere",
+  "name": "react-express-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "``` mkdir project cd project npm init ```",
   "main": "index.js",
   "scripts": {
+    "build": "cd client && npm run build",
     "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dillontiner/react-express-boilerplate.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dillontiner/react-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/dillontiner/react-express-boilerplate#readme",
   "dependencies": {
     "express": "^4.16.3"
   },
