@@ -4,13 +4,17 @@ Use this to get your project rolling or take a look at the steps below to get th
 
 To run the repository
 ```
-git clone https://github.com/dillontiner/react-express-boilerplate.git
-cd react-express-boilerplate
+git clone https://github.com/dillontiner/react-express-boilerplate.git my-project
+cd my-project
 npm run all-install && npm run build
 npm start
 ```
 
 # Creating the Boilerplate 
+
+Follow these instructions if you're curious about how everything is actually put together.
+
+http://ericsowell.com/blog/2017/5/16/create-react-app-and-express
 
 ### Prerequisite Installations
 Node
@@ -30,7 +34,6 @@ npm init
 ```
 mkdir server
 npm install --save express
-npm install --save-dev concurrently
 ```
 
 Edit the `package.json` scripts to be the following
@@ -55,19 +58,13 @@ const app = express();
 // Priority serve any static files.
 app.use(express.static(path.resolve(__dirname, '../client/build')));
 
-// Answer API requests.
-app.get('/api', function (req, res) {
-  res.set('Content-Type', 'application/json');
-  res.send('{"message":"Hello from the custom server!"}');
-});
-
 // All remaining requests return the React app, so it can handle routing.
 app.get('*', function(request, response) {
   response.sendFile(path.resolve(__dirname, '../client/build', 'index.html'));
 });
 
 app.listen(PORT, function () {
-  console.error(`Node cluster worker ${process.pid}: listening on port ${PORT}`);
+  console.error(`Node listening on port ${PORT}`);
 });
 ```
 
@@ -82,3 +79,7 @@ The server uses the build assets to
 ```
 cd client && npm run build
 ```
+
+# Resources
+
+[Tutorial](https://medium.freecodecamp.org/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0) that can help you get an express API
