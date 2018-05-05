@@ -1,28 +1,14 @@
 {
-  "name": "react-express-boilerplate",
+  "name": "three-js-sphere",
   "version": "1.0.0",
-  "description": "create-react-app with express server",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "cd client && yarn start",
-    "server": "nodemon server",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dillontiner/react-express-boilerplate.git"
-  },
-  "keywords": [
-    "react",
-    "express"
-  ],
-  "author": "Dillon Tiner",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dillontiner/react-express-boilerplate/issues"
-  },
-  "homepage": "https://github.com/dillontiner/react-express-boilerplate#readme",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.16.3"
   },
