@@ -4,6 +4,7 @@
   "description": "``` mkdir project cd project npm init ```",
   "main": "index.js",
   "scripts": {
+    "all-install": "npm install && cd client && npm install",
     "build": "cd client && npm run build",
     "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"

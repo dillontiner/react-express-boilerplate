@@ -1,25 +1,32 @@
-### React Express Boilerplate
+# React Express Boilerplate
 
-Feel free to use this to get your project rolling or take a look at the steps below to get the same thing up and running.
+Use this to get your project rolling or take a look at the steps below to get the same thing boilerplate up and running from scratch.
 
+To run the repository
+```
+git clone https://github.com/dillontiner/react-express-boilerplate.git
+cd react-express-boilerplate
+npm run all-install && npm run build
+npm start
+```
 
-### Creating the boilerplate from scratch
+# Creating the Boilerplate 
 
-## Prerequisite Installations
+### Prerequisite Installations
 Node
 If you haven't already, install `create-react-app` globally
 ```
 npm install -g create-react-app
 ```
 
-## Create a new node project
+### Create a new node project
 ```
 mkdir project
 cd project
 npm init
 ```
 
-## Server setup
+### Server setup
 ```
 mkdir server
 npm install --save express
@@ -64,7 +71,7 @@ app.listen(PORT, function () {
 });
 ```
 
-## Client setup
+### Client setup
 ```
 create-react-app client
 ```
@@ -72,7 +79,6 @@ create-react-app client
 Add `"proxy": "http://localhost:5000/"` to `client/package.json`
 
 The server uses the build assets to 
-````
+```
 cd client && npm run build
 ```
-
