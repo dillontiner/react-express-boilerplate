@@ -26,11 +26,9 @@ Follow these instructions if you're curious about how everything is actually put
 http://ericsowell.com/blog/2017/5/16/create-react-app-and-express
 
 ### Prerequisite Installations
-Node
-If you haven't already, install `create-react-app` globally
-```
-npm install -g create-react-app
-```
+- [Node](https://nodejs.org/en/download/)
+- Create React App CLI, `npm install -g create-react-app`
+- [Docker CE](https://www.docker.com/community-edition)
 
 ### Create a new node project
 ```
