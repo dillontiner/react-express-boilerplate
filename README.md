@@ -23,8 +23,6 @@ to create `react-express.zip` and upload it as part of [these steps](https://doc
 
 Follow these instructions if you're curious about how everything is actually put together.
 
-http://ericsowell.com/blog/2017/5/16/create-react-app-and-express
-
 ### Prerequisite Installations
 - [Node](https://nodejs.org/en/download/)
 - Create React App CLI, `npm install -g create-react-app`
@@ -97,4 +95,6 @@ npm start
 
 # Resources
 
-[Tutorial](https://medium.freecodecamp.org/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0) that can help you get an express API
+These tutorials were helpful in exploring this topic
+- http://ericsowell.com/blog/2017/5/16/create-react-app-and-express
+- https://medium.freecodecamp.org/how-to-make-create-react-app-work-with-a-node-backend-api-7c5c48acb1b0
