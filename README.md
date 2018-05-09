@@ -10,6 +10,15 @@ npm run all-install && npm run build
 npm start
 ```
 
+
+# Deploying this as a Docker image
+
+The `Makefile` in this repository contains a `zip` target that will prepare the assets for an Elastic Beanstalk deployment on AWS. From the project directory, run 
+```
+make zip
+```
+to create `react-express.zip` and upload it to AWS as part of the following steps on deploying [Docker to AWS](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/docker-singlecontainer-deploy.html).
+
 # Creating the Boilerplate 
 
 Follow these instructions if you're curious about how everything is actually put together.
