@@ -82,9 +82,17 @@ create-react-app client
 
 Add `"proxy": "http://localhost:5000/"` to `client/package.json`
 
-The server uses the build assets to 
+Our server uses the `client/build` directory to serve files, so run
 ```
-cd client && npm run build
+cd client
+npm run build
+```
+
+as a final step to prepare those files. Now, the project will work when we start it up from the project's root directory
+```
+# Make sure you're in the project's root directory
+cd ../
+npm start
 ```
 
 # Resources
