@@ -17,7 +17,7 @@ The `Makefile` in this repository contains a `zip` target that will prepare the 
 ```
 make zip
 ```
-to create `react-express.zip` and upload it to AWS as part of the following steps on deploying [Docker to AWS](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/docker-singlecontainer-deploy.html).
+to create `react-express.zip` and upload it as part of [these steps](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/docker-singlecontainer-deploy.html) on deploying a Docker container to AWS.
 
 # Creating the Boilerplate 
 
